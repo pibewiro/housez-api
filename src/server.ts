@@ -1,6 +1,4 @@
-import express from 'express';
+/* eslint-disable no-console */
+import app from './config/server';
 
-const app = express();
-
-// eslint-disable-next-line no-console
 app.listen(8000, () => console.log('Connected to port 8000'));
