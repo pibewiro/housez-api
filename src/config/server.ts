@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import { router } from '../routes';
 import { AppError } from '../errors/AppError';
+import '../database';
 
 class App {
   public server;

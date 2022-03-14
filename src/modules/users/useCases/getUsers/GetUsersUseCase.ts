@@ -1,11 +1,11 @@
-class GetUsersUseCase {
-  private users;
-  constructor() {
-    this.users = [{ id: 111, name: 'John' }];
-  }
+import { IUsersRepository } from '../../repositories/IUsersRepository';
 
-  execute() {
-    return this.users;
+class GetUsersUseCase {
+  constructor(private UsersRepository: IUsersRepository) {}
+
+  async execute() {
+    const data = await this.UsersRepository.find();
+    return data;
   }
 }
 
