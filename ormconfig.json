@@ -1,0 +1,13 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "username": "admin",
+  "password": "admin",
+  "database": "housez",
+  "port": 5432,
+  "migrations": ["./src/database/migrations/*.ts"],
+  "entities": ["./src/modules/**/*.entity.ts"],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
+}
